@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="backgroundcolor" stylesheets="@../assets/cssSheets/MetropolitantColourSchema.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.metropolitan.controller.LoginFormController">
+   <children>
+      <Label fx:id="lblPasswordAlert" layoutX="901.0" layoutY="435.0" prefHeight="17.0" prefWidth="41.0" textFill="RED" />
+      <Separator layoutX="680.0" layoutY="92.0" orientation="VERTICAL" prefHeight="578.0" prefWidth="6.0" />
+      <Label cache="true" cacheHint="QUALITY" depthTest="ENABLE" layoutX="142.0" layoutY="278.0" nodeOrientation="LEFT_TO_RIGHT" onMouseEntered="#showTextOnMouseEnter" prefHeight="107.0" prefWidth="404.0" stylesheets="@../assets/cssSheets/MetropolitantColourSchema.css" text="METROPOLITAN">
+         <font>
+            <Font name="Arial Black" size="43.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.21960784494876862" green="0.6745098233222961" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7764706015586853" green="0.0235294122248888" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="64.96" radius="17.325" spread="0.09" width="6.34">
+               <color>
+                  <Color red="8.528265170753002E-4" green="0.08947571367025375" blue="0.18421052396297455" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label alignment="CENTER_RIGHT" cache="true" cacheHint="QUALITY" depthTest="ENABLE" layoutX="143.0" layoutY="339.0" mouseTransparent="true" nodeOrientation="RIGHT_TO_LEFT" prefHeight="107.0" prefWidth="404.0" stylesheets="@../assets/cssSheets/MetropolitantColourSchema.css" text="TECHNOLOGIES" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Black" size="43.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.21960784494876862" green="0.6745098233222961" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7688271403312683" green="0.009259259328246117" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="3.42" radius="5.484999999999999" width="20.52">
+               <color>
+                  <Color red="0.08157894760370255" blue="0.40789473056793213" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <ImageView blendMode="COLOR_DODGE" fitHeight="105.0" fitWidth="111.0" layoutX="995.0" layoutY="191.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/logos/user.png" />
+         </image></ImageView>
+      <TextField fx:id="txtUserName" layoutX="898.0" layoutY="307.0" prefHeight="35.0" prefWidth="285.0" promptText="user name" />
+      <PasswordField fx:id="txtPassword" layoutX="898.0" layoutY="395.0" prefHeight="27.0" prefWidth="285.0" promptText="password" />
+      <Button fx:id="btnLogin" layoutX="1100.0" layoutY="475.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="buttonColour" stylesheets="@../assets/cssSheets/MetropolitantColourSchema.css" text="LOGIN" textFill="WHITE" />
+      <Label layoutX="902.0" layoutY="558.0" prefHeight="23.0" prefWidth="185.0" text="To add a new user -&gt;" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSignUp" layoutX="1100.0" layoutY="556.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="buttonColour" stylesheets="@../assets/cssSheets/MetropolitantColourSchema.css" text="SIGN UP" textFill="WHITE" />
+      <ImageView blendMode="MULTIPLY" disable="true" fitHeight="186.0" fitWidth="372.0" layoutX="153.0" layoutY="110.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/logos/download.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="131.0" layoutY="438.0" prefHeight="28.0" prefWidth="466.0" text="PC's aren't dreams. We make it real..." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Sitka Text" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUserNameAlert" layoutX="899.0" layoutY="348.0" prefHeight="17.0" prefWidth="45.0" textFill="RED" />
+   </children>
+</AnchorPane>

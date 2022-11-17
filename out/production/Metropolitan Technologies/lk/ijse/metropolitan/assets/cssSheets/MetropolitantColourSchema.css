@@ -1,0 +1,14 @@
+.backgroundcolor{
+    -fx-background-color: linear-gradient(to right bottom , #192940,#2C4E70);
+}
+.buttonColour {
+    -fx-background-color: linear-gradient(to right bottom, #0949a5, #43a2fd);
+}
+.topPaneBackgroundcolor{
+    -fx-background-color: linear-gradient(to right bottom , #024c7e, #25374b);
+
+}
+.specialTextColour{
+    -fx-background-color: linear-gradient(to right bottom , #38acff, #c606ff);
+
+}
